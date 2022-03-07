@@ -2235,6 +2235,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fridge_SBS
       objectReference: {fileID: 0}
+    - target: {fileID: 6464445303912673418, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.632993
+      objectReference: {fileID: 0}
+    - target: {fileID: 6464445303912673418, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.881
+      objectReference: {fileID: 0}
     - target: {fileID: 6909306594215196371, guid: 51ed19930404371458e8d3152edbad78, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4682,30 +4690,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4506549326037774, guid: 9b7544fb35993a244bd1bc155bffc119, type: 3}
   m_PrefabInstance: {fileID: 1524231656}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2096249786 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7067773725115226821, guid: 51ed19930404371458e8d3152edbad78, type: 3}
-  m_PrefabInstance: {fileID: 1130596020}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2096249790
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096249786}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3fa4bfafb8ce053498233daf45c45bac, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2099636012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4806268282040492, guid: c19c56b1abee19f40b74363d4df46f32, type: 3}
