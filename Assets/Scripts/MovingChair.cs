@@ -14,6 +14,11 @@ public class MovingChair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
         if (Input.GetKey(KeyCode.E))
             MoveChair.SetBool("Move", true);
         if (Input.GetKey(KeyCode.R))
