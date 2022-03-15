@@ -676,11 +676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.75
+      value: 4.83
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.690002
+      value: 33.339996
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4313,7 +4313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 6.12, z: -0.23000145}
+  m_FollowOffset: {x: 0, y: 4.2, z: 0.12000084}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -4505,7 +4505,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.850664, w: 1.3949335}
+  m_margin: {x: 0, y: 0, z: 16.850664, w: 3.1704304}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6024,11 +6024,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.75
+      value: 4.83
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.690002
+      value: 33.339996
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6264,6 +6264,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 477411082}
     m_Modifications:
+    - target: {fileID: 734784583825234095, guid: 026bbb898b925f54b9fc6523b72e5933, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba63ee7467032a447b61e5040c74e1a2, type: 2}
     - target: {fileID: 1239201142768515450, guid: 026bbb898b925f54b9fc6523b72e5933, type: 3}
       propertyPath: m_Name
       value: Coffee Maker
@@ -6324,6 +6328,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4083191782085738514, guid: 026bbb898b925f54b9fc6523b72e5933, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2d15eb7a4de4f43bbffadd60ee6f40, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 026bbb898b925f54b9fc6523b72e5933, type: 3}
 --- !u!1 &1339915138 stripped
@@ -7495,13 +7503,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 6824241290725859361, guid: 7c9f7bad9dd8695408d495d4f309f179, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e57d6bb6a6a1b74795062b56af48f40, type: 2}
     - target: {fileID: 6878276038103193739, guid: 7c9f7bad9dd8695408d495d4f309f179, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 6878276038103193739, guid: 7c9f7bad9dd8695408d495d4f309f179, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.5
+      value: 0.37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c9f7bad9dd8695408d495d4f309f179, type: 3}
