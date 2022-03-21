@@ -4586,7 +4586,7 @@ GameObject:
   - component: {fileID: 890329658}
   - component: {fileID: 890329657}
   - component: {fileID: 890329656}
-  - component: {fileID: 890329660}
+  - component: {fileID: 890329661}
   m_Layer: 0
   m_Name: door1
   m_TagString: Untagged
@@ -4670,7 +4670,7 @@ Transform:
   m_Father: {fileID: 814165149}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &890329660
+--- !u!114 &890329661
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4679,10 +4679,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 890329655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b75f26eb7da58b4f8163a2293386a91, type: 3}
+  m_Script: {fileID: 11500000, guid: e789a4c30c6b19546931d73603772888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveDoor: {fileID: 1510482805}
+  Water: {fileID: 1675386113}
+  Water2: {fileID: 271418823}
 --- !u!1 &895585450
 GameObject:
   m_ObjectHideFlags: 0
