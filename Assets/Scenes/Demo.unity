@@ -2193,6 +2193,101 @@ Transform:
   m_Father: {fileID: 814165149}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0.287, z: 0}
+--- !u!1 &511527938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511527939}
+  - component: {fileID: 511527942}
+  - component: {fileID: 511527941}
+  - component: {fileID: 511527940}
+  m_Layer: 8
+  m_Name: LeftHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511527939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511527938}
+  m_LocalRotation: {x: -0.06631258, y: 0.9679068, z: -0.18781044, w: -0.15325293}
+  m_LocalPosition: {x: 0.028, y: 0.046, z: -0.001}
+  m_LocalScale: {x: 0.090191014, y: 0.090190984, z: 0.09019103}
+  m_Children: []
+  m_Father: {fileID: 618517537}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &511527940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511527938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &511527941
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511527938}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &511527942
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511527938}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &515667506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6728270949622622335, guid: 158f818f5cdf7f54f8cb6f3b74f535c8, type: 3}
@@ -2765,6 +2860,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!4 &618517537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9186500496127808867, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+  m_PrefabInstance: {fileID: 836819190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &619722966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3167,7 +3267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fridge: {fileID: 657921362}
   Plate: {fileID: 224355305}
-  Hand: {fileID: 1583471646}
+  Hand: {fileID: 511527938}
   Apple: {fileID: 970546314}
   Carrot: {fileID: 1074096393}
   Tomato: {fileID: 363511466}
@@ -8494,6 +8594,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 20293085696677d40a2cc969adbb2e12, type: 3}
   m_PrefabInstance: {fileID: 347357439}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &809110071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4427191320606395980, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}
+  m_PrefabInstance: {fileID: 1154326453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &814165149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013553621506, guid: 1b94ae05025ef3f46ae988df48f631f4, type: 3}
@@ -11763,7 +11868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4427191320606395980, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}
       propertyPath: m_Name
-      value: plate02 (2)
+      value: plate02 (2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}
@@ -14007,7 +14112,7 @@ GameObject:
   - component: {fileID: 1583471649}
   - component: {fileID: 1583471648}
   m_Layer: 8
-  m_Name: Cube
+  m_Name: RigthHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15718,6 +15823,7 @@ GameObject:
   - component: {fileID: 1891681457}
   - component: {fileID: 1891681456}
   - component: {fileID: 1891681459}
+  - component: {fileID: 1891681460}
   m_Layer: 0
   m_Name: door3
   m_TagString: Untagged
@@ -15814,6 +15920,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveDoor: {fileID: 1440439772}
+--- !u!114 &1891681460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891681454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2d3dc69e39b884e9f2a985c7032441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plate: {fileID: 809110071}
+  Hand: {fileID: 1583471646}
 --- !u!1 &1894017296
 GameObject:
   m_ObjectHideFlags: 0
@@ -21387,7 +21507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4427191320606395980, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}
       propertyPath: m_Name
-      value: plate02 (1)
+      value: plate02 (1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}

@@ -32,7 +32,7 @@ public class GrabbingFoodInFridge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.R))
+        if (Input.GetKey(KeyCode.R) && Hand.transform.childCount > 0)
         {
             Grabbed.transform.SetParent(null);
             Grabbed = null;
