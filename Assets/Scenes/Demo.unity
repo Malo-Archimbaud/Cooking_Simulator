@@ -949,6 +949,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d40f3021e1a1a144a9e7f21c2d64126e, type: 3}
   m_PrefabInstance: {fileID: 2010435078}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &224355305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4427191320606395980, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}
+  m_PrefabInstance: {fileID: 1659023961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &229631822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1521,7 +1526,6 @@ GameObject:
   - component: {fileID: 413464513}
   - component: {fileID: 413464512}
   - component: {fileID: 413464515}
-  - component: {fileID: 413464516}
   m_Layer: 0
   m_Name: FridgeR
   m_TagString: Untagged
@@ -1618,34 +1622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveDoor: {fileID: 1130596023}
---- !u!114 &413464516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413464510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6951a87ce1dbc243b8e4ead4a3c997d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Fridge: {fileID: 413464510}
-  Hand: {fileID: 1583471646}
-  Apple: {fileID: 970546314}
-  Carrot: {fileID: 1074096393}
-  Tomato: {fileID: 363511466}
-  Pizza: {fileID: 308119082}
-  Cake: {fileID: 236634979}
-  Kiwi: {fileID: 1479899475}
-  Orange: {fileID: 1103475120}
-  Yogurt: {fileID: 1448235429}
-  Banana: {fileID: 1809120822}
-  Cherry: {fileID: 1723839403}
-  Eggs: {fileID: 1036154688}
-  Lemon: {fileID: 8167586}
-  Steak: {fileID: 389701360}
-  Cheese: {fileID: 491323056}
 --- !u!1 &436991958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,7 +2685,6 @@ GameObject:
   - component: {fileID: 581900755}
   - component: {fileID: 581900754}
   - component: {fileID: 581900757}
-  - component: {fileID: 581900758}
   m_Layer: 0
   m_Name: door4
   m_TagString: Untagged
@@ -2806,18 +2781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveDoor: {fileID: 507260967}
---- !u!114 &581900758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581900752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8fd0b10a9c6c0641bd080e7a40d30f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &582602037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,6 +3276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fridge: {fileID: 657921362}
+  Plate: {fileID: 224355305}
   Hand: {fileID: 1583471646}
   Apple: {fileID: 970546314}
   Carrot: {fileID: 1074096393}
@@ -10302,7 +10266,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "E interact \nR put them back\nZQSD move\n"
+  m_text: "E interact \nR put them back\nZQSD move\nYou can have one aliment in your
+    hand at once"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10365,7 +10330,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.850664, w: 3.1704304}
+  m_margin: {x: 0, y: 0, z: 15.265345, w: 2.5552838}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11133,7 +11098,6 @@ GameObject:
   - component: {fileID: 992459015}
   - component: {fileID: 992459014}
   - component: {fileID: 992459017}
-  - component: {fileID: 992459018}
   m_Layer: 0
   m_Name: door6
   m_TagString: Untagged
@@ -11230,18 +11194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveDoor: {fileID: 1339915144}
---- !u!114 &992459018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992459012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8fd0b10a9c6c0641bd080e7a40d30f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &998462636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12954,7 +12906,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479082831}
   m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -5.2800026}
+  m_LocalPosition: {x: 0, y: 0, z: -5.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1217009232}

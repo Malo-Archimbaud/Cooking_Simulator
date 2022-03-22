@@ -47,5 +47,83 @@ public class GrabbingFoodInFridge : MonoBehaviour
             Apple.transform.SetParent(Hand.transform);
             Apple.transform.transform.localPosition = new Vector3(0, 0, 0);
         }
+        if (Input.GetKey(KeyCode.B))
+        {
+            Grabbed = Banana;
+            Banana.transform.SetParent(Hand.transform);
+            Banana.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.C))
+        {
+            Grabbed = Carrot;
+            Carrot.transform.SetParent(Hand.transform);
+            Carrot.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.G))
+        {
+            Grabbed = Eggs;
+            Eggs.transform.SetParent(Hand.transform);
+            Eggs.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.H))
+        {
+            Grabbed = Cheese;
+            Cheese.transform.SetParent(Hand.transform);
+            Cheese.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.K))
+        {
+            Grabbed = Cake;
+            Cake.transform.SetParent(Hand.transform);
+            Cake.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.L))
+        {
+            Grabbed = Lemon;
+            Lemon.transform.SetParent(Hand.transform);
+            Lemon.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.M))
+        {
+            Grabbed = Steak;
+            Steak.transform.SetParent(Hand.transform);
+            Steak.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.O))
+        {
+            Grabbed = Orange;
+            Orange.transform.SetParent(Hand.transform);
+            Orange.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.P))
+        {
+            Grabbed = Pizza;
+            Pizza.transform.SetParent(Hand.transform);
+            Pizza.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.T))
+        {
+            Grabbed = Tomato;
+            Tomato.transform.SetParent(Hand.transform);
+            Tomato.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.U))
+        {
+            Grabbed = Yogurt;
+            Yogurt.transform.SetParent(Hand.transform);
+            Yogurt.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            Grabbed = Kiwi;
+            Kiwi.transform.SetParent(Hand.transform);
+            Kiwi.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.Y))
+        {
+            Grabbed = Cherry;
+            Cherry.transform.SetParent(Hand.transform);
+            Cherry.transform.transform.localPosition = new Vector3(0, 0, 0);
+        }
     }
 }
