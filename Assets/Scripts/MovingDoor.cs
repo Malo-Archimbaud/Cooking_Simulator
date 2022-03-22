@@ -20,8 +20,14 @@ public class MovingDoor : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (Input.GetKey(KeyCode.E))
+        {
             MoveDoor.SetBool("Moving", true);
+            MoveDoor.SetBool("MovingR", true);
+        }
         if (Input.GetKey(KeyCode.R))
+        {
             MoveDoor.SetBool("Moving", false);
+            MoveDoor.SetBool("MovingR", false);
+        }
     }
 }
