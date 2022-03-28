@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrabbingPlate : MonoBehaviour
+public class ReleasingPlate : MonoBehaviour
 {
     public GameObject Plate;
     public GameObject Hand;
     public Animator character;
-    private GameObject Grabbed;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,18 +16,17 @@ public class GrabbingPlate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.P))
+        if (Input.GetKey(KeyCode.R) && Hand.transform.childCount > 0)
         {
-            Grabbed = Plate;
-            Plate.transform.SetParent(Hand.transform);
-            Plate.transform.transform.localPosition = new Vector3(0, 0, 0);
-            Plate.transform.transform.localEulerAngles = new Vector3(115, 180, -60);
-            character.SetBool("HavePlate", true);
+            Plate.transform.SetParent(null);
+            character.SetBool("HavePlate", false);
+            Plate.transform.transform.position = new Vector3(-14, (float)1.428, 25);
+            Plate.transform.transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 }
