@@ -21,12 +21,13 @@ public class GrabbingFoodInFridge : MonoBehaviour
     public GameObject Lemon;
     public GameObject Steak;
     public GameObject Cheese;
+    public GameObject text;
     private GameObject Grabbed;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        text.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,8 +40,15 @@ public class GrabbingFoodInFridge : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        text.SetActive(false);
+    }
+
     private void OnTriggerStay(Collider other)
     {
+        text.SetActive(true);
+
         if (Input.GetKey(KeyCode.A))
         {
             Grabbed = Apple;

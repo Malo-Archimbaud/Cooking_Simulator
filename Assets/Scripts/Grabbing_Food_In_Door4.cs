@@ -12,12 +12,13 @@ public class Grabbing_Food_In_Door4 : MonoBehaviour
     public GameObject Acorn;
     public GameObject Mushroom;
     public GameObject Garllic;
+    public GameObject text;
     private GameObject Grabbed;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        text.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,9 +31,15 @@ public class Grabbing_Food_In_Door4 : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        text.SetActive(false);
+    }
+
     private void OnTriggerStay(Collider other)
     {
-        
+        text.SetActive(true);
+
         if (Input.GetKey(KeyCode.N))
         {
             Grabbed = Bread;

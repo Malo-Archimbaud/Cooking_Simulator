@@ -2986,6 +2986,7 @@ MonoBehaviour:
   Acorn: {fileID: 1377547471}
   Mushroom: {fileID: 1430786493}
   Garllic: {fileID: 1897331496}
+  text: {fileID: 498872000}
 --- !u!1 &582602037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +3544,7 @@ MonoBehaviour:
   Lemon: {fileID: 8167586}
   Steak: {fileID: 389701360}
   Cheese: {fileID: 491323056}
+  text: {fileID: 1479082831}
 --- !u!1 &669251489
 GameObject:
   m_ObjectHideFlags: 0
@@ -11507,6 +11509,7 @@ MonoBehaviour:
   Waffle: {fileID: 3868034}
   TopBread: {fileID: 453272380}
   BottomBread: {fileID: 716045215}
+  text: {fileID: 2060559634}
 --- !u!1001 &998462636
 PrefabInstance:
   m_ObjectHideFlags: 0
