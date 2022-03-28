@@ -1135,6 +1135,7 @@ GameObject:
   - component: {fileID: 251619447}
   - component: {fileID: 251619451}
   - component: {fileID: 251619452}
+  - component: {fileID: 251619453}
   m_Layer: 0
   m_Name: TableHitbox
   m_TagString: Untagged
@@ -1246,7 +1247,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hand: {fileID: 511527938}
-  character: {fileID: 1237603688}
+--- !u!114 &251619453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251619446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065398930214e114ab8057ea8c5cb81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Knife: {fileID: 533843404}
+  Hand: {fileID: 1583471646}
 --- !u!1 &271418823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,6 +1727,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveDoor: {fileID: 402344422}
+--- !u!1 &435918620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 4be4f079cd4d6c14fbe4259f895d9bf0, type: 3}
+  m_PrefabInstance: {fileID: 1510129261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &436991958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,6 +2522,11 @@ MeshFilter:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6728270949622622335, guid: 158f818f5cdf7f54f8cb6f3b74f535c8, type: 3}
   m_PrefabInstance: {fileID: 402344420}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &533843404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4643012156619559856, guid: 25ca339fb22a5a546a6255d27ffaa56d, type: 3}
+  m_PrefabInstance: {fileID: 174857048}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &534399066
 GameObject:
@@ -13038,6 +13062,117 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8366034168079463417, guid: 18925ea6c93987e49979c5fcda598980, type: 3}
+--- !u!1 &1409325327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409325328}
+  - component: {fileID: 1409325332}
+  - component: {fileID: 1409325331}
+  - component: {fileID: 1409325330}
+  - component: {fileID: 1409325329}
+  m_Layer: 0
+  m_Name: PanHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409325328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409325327}
+  m_LocalRotation: {x: -0, y: 0.43847844, z: -0, w: 0.8987417}
+  m_LocalPosition: {x: 0.379, y: 0, z: 0.263}
+  m_LocalScale: {x: 0.31529298, y: 1.1615049, z: 0.21049}
+  m_Children: []
+  m_Father: {fileID: 1862848661}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 52.014, z: 0}
+--- !u!114 &1409325329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409325327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817a2b789b54ff44f9182ebc4922ab77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hand: {fileID: 511527938}
+  Particle: {fileID: 1992588938}
+  Pan: {fileID: 435918620}
+--- !u!65 &1409325330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409325327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1409325331
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409325327}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1409325332
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409325327}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1430786493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: b53fab1a8a71cf745ad1af6d16214489, type: 3}
@@ -16764,7 +16899,7 @@ GameObject:
   - component: {fileID: 1992588941}
   - component: {fileID: 1992588940}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Steak Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
