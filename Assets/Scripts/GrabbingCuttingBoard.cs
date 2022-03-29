@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class GrabbingCuttingBoard : MonoBehaviour
 {
-
+    public GameObject Door3;
     public GameObject CuttingBoard;
     public GameObject Hand;
+    public GameObject text;
     // Start is called before the first frame update
     void Start()
     {
-        
+        text.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,9 +19,15 @@ public class GrabbingCuttingBoard : MonoBehaviour
     {
         
     }
+    private void OnTriggerExit(Collider other)
+    {
+        text.SetActive(false);
+    }
 
     private void OnTriggerStay(Collider other)
     {
+        text.SetActive(true);
+
         if (Input.GetKey(KeyCode.C))
         {
             CuttingBoard.transform.SetParent(Hand.transform);
