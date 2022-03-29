@@ -25,7 +25,7 @@ public class ReleasingFood : MonoBehaviour
         if (Input.GetKey(KeyCode.R) && Hand.transform.childCount > 0)
         {
             Food.transform.SetParent(null);
-            Food.transform.transform.position = new Vector3((float)-14.24, (float)1.428, (float)(25.208));
+            Food.transform.transform.position = new Vector3(-14.24f, 1.428f, 25.208f);
             Food = null;    
         }
     }

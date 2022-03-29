@@ -31,7 +31,7 @@ public class CookingSteak : MonoBehaviour
         if (Hand.transform.childCount > 0 && Input.GetKey(KeyCode.P))
         {
             Food.transform.SetParent(Pan.transform);
-            Food.transform.transform.localPosition = new Vector3((float)-0.005, (float)0.0196, (float)0.0163);
+            Food.transform.transform.localPosition = new Vector3(-0.005f, 0.0196f, 0.0163f);
             Food.transform.transform.localEulerAngles = new Vector3(0, 0, 0);
         }
 

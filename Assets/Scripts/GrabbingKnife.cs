@@ -24,7 +24,7 @@ public class GrabbingKnife : MonoBehaviour
         {
             Grabbed = Knife;
             Knife.transform.SetParent(Hand.transform);
-            Knife.transform.transform.localPosition = new Vector3((float)-0.1, 0, (float)0.38);
+            Knife.transform.transform.localPosition = new Vector3(-0.1f, 0, 0.38f);
             Knife.transform.transform.localEulerAngles = new Vector3(-97, -95, -7);
         }
     }

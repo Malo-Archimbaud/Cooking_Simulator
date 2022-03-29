@@ -25,7 +25,7 @@ public class ReleasingPlate : MonoBehaviour
         {
             Plate.transform.SetParent(null);
             character.SetBool("HavePlate", false);
-            Plate.transform.transform.position = new Vector3((float)-14.24, (float)1.428, (float)(25.208));
+            Plate.transform.transform.position = new Vector3(-14.24f, 1.428f, 25.208f);
             Plate.transform.transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
