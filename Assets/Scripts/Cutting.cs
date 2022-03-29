@@ -9,16 +9,22 @@ public class Cutting : MonoBehaviour
     public GameObject Tomato;
     public GameObject ChoppedTomato;
     public Animator CuttingTomato;
+    private int cpt = 3000;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ChoppedTomato.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void Setfalse ()
+    {
+        CuttingTomato.SetBool("Tomato", false);
     }
 
     private void OnTriggerStay(Collider other)
@@ -28,7 +34,9 @@ public class Cutting : MonoBehaviour
             CuttingTomato.SetBool("Tomato", true);
             Tomato.SetActive(false);
             ChoppedTomato.SetActive(true);
+            ChoppedTomato.transform.transform.localPosition = new Vector3(0, 0.02f, 0);
 
+            Invoke("Setfalse", 3.0f);
         }
     }
 }
