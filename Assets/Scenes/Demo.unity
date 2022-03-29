@@ -675,7 +675,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: far clip plane
-      value: 500
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_Name
@@ -1139,6 +1139,7 @@ GameObject:
   - component: {fileID: 251619454}
   - component: {fileID: 251619455}
   - component: {fileID: 251619456}
+  - component: {fileID: 251619457}
   m_Layer: 0
   m_Name: TableHitbox
   m_TagString: Untagged
@@ -1311,6 +1312,21 @@ MonoBehaviour:
   Tomato: {fileID: 363511466}
   ChoppedTomato: {fileID: 1360880324}
   CuttingTomato: {fileID: 1237603688}
+--- !u!114 &251619457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251619446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e13094e117f4984791b3787f8a626ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoppedTomato: {fileID: 1360880324}
+  LeftHand: {fileID: 511527938}
+  RightHand: {fileID: 1583471646}
 --- !u!1 &271418823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7802,6 +7818,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 557249803}
+    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 21
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2070925442191277752, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
