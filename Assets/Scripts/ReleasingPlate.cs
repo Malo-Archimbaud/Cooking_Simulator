@@ -21,7 +21,7 @@ public class ReleasingPlate : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.R) && Hand.transform.childCount > 0)
+        if (Input.GetKey(KeyCode.R) && Hand.transform.Find("plate02 (2"))
         {
             Plate.transform.SetParent(null);
             character.SetBool("HavePlate", false);
