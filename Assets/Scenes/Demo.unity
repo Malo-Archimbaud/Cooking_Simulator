@@ -1137,6 +1137,7 @@ GameObject:
   - component: {fileID: 251619452}
   - component: {fileID: 251619453}
   - component: {fileID: 251619454}
+  - component: {fileID: 251619455}
   m_Layer: 0
   m_Name: TableHitbox
   m_TagString: Untagged
@@ -1276,6 +1277,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hand: {fileID: 1583471646}
   Knife: {fileID: 533843404}
+--- !u!114 &251619455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251619446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d761389506824314ca93c3d761359107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hand: {fileID: 1583471646}
+  CuttingBoard: {fileID: 375078746}
 --- !u!1 &271418823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1607,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 292237ffd3dc1444c828be3c90e1d862, type: 3}
   m_PrefabInstance: {fileID: 2097307527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &375078746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bef27734c298e649b7b9c2957fb7d23, type: 3}
+  m_PrefabInstance: {fileID: 229631822}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &389701360 stripped
 GameObject:
@@ -11611,6 +11631,7 @@ GameObject:
   - component: {fileID: 1891681456}
   - component: {fileID: 1891681459}
   - component: {fileID: 1891681460}
+  - component: {fileID: 1891681461}
   m_Layer: 0
   m_Name: door3
   m_TagString: Untagged
@@ -11722,6 +11743,20 @@ MonoBehaviour:
   Plate: {fileID: 809110071}
   Hand: {fileID: 1583471646}
   character: {fileID: 1237603688}
+--- !u!114 &1891681461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891681454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa38418f3f87c04d855a34965c86b4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CuttingBoard: {fileID: 375078746}
+  Hand: {fileID: 1583471646}
 --- !u!1 &1894017296
 GameObject:
   m_ObjectHideFlags: 0
