@@ -8,6 +8,7 @@ public class Cutting : MonoBehaviour
     public GameObject CuttingBoard;
     public GameObject Tomato;
     public GameObject ChoppedTomato;
+    public GameObject Hand;
     public Animator CuttingTomato;
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class Cutting : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Table.transform.Find("CuttingBoard") && CuttingBoard.transform.Find("tomato") && Input.GetKey(KeyCode.T))
+        if (Table.transform.Find("CuttingBoard") && CuttingBoard.transform.Find("tomato") && Input.GetKey(KeyCode.T) && Hand.transform.Find("1kceramicblade"))
         {
             CuttingTomato.SetBool("Tomato", true);
             Tomato.SetActive(false);

@@ -1312,6 +1312,7 @@ MonoBehaviour:
   CuttingBoard: {fileID: 375078746}
   Tomato: {fileID: 363511466}
   ChoppedTomato: {fileID: 1360880324}
+  Hand: {fileID: 1583471646}
   CuttingTomato: {fileID: 1237603688}
 --- !u!114 &251619457
 MonoBehaviour:
@@ -1328,6 +1329,8 @@ MonoBehaviour:
   ChoppedTomato: {fileID: 1360880324}
   LeftHand: {fileID: 511527938}
   RightHand: {fileID: 1583471646}
+  text: {fileID: 401708309}
+  Table: {fileID: 1795126478}
 --- !u!114 &251619458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,8 +1353,6 @@ MonoBehaviour:
   RightHand: {fileID: 1583471646}
   LeftHand: {fileID: 511527938}
   anim: {fileID: 1237603688}
-  text: {fileID: 401708309}
-  Table: {fileID: 251619446}
 --- !u!1 &271418823
 GameObject:
   m_ObjectHideFlags: 0
