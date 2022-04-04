@@ -7,10 +7,17 @@ public class GrabbingFoodOnTable : MonoBehaviour
     public GameObject ChoppedTomato;
     public GameObject LeftHand;
     public GameObject RightHand;
+    public GameObject text;
+    public GameObject Table;
     // Start is called before the first frame update
     void Start()
     {
-        
+        text.SetActive(false);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        text.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,6 +28,8 @@ public class GrabbingFoodOnTable : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        text.SetActive(true);
+
         if (Input.GetKey(KeyCode.T) && RightHand.transform.childCount < 1)
         {
             ChoppedTomato.transform.SetParent(LeftHand.transform);
