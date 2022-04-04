@@ -34,7 +34,8 @@ public class Cutting : MonoBehaviour
             CuttingTomato.SetBool("Tomato", true);
             Tomato.SetActive(false);
             ChoppedTomato.SetActive(true);
-            ChoppedTomato.transform.transform.localPosition = new Vector3(0, 0.02f, 0);
+            ChoppedTomato.transform.SetParent(Table.transform, false);
+            ChoppedTomato.transform.transform.localPosition = new Vector3(-0.758f, 0.915f, -0.268f);
             Tomato.transform.SetParent(null);
 
             Invoke("Setfalse", 3.0f);
