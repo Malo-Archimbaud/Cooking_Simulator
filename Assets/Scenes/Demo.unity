@@ -1140,6 +1140,7 @@ GameObject:
   - component: {fileID: 251619455}
   - component: {fileID: 251619456}
   - component: {fileID: 251619457}
+  - component: {fileID: 251619458}
   m_Layer: 0
   m_Name: TableHitbox
   m_TagString: Untagged
@@ -1327,6 +1328,28 @@ MonoBehaviour:
   ChoppedTomato: {fileID: 1360880324}
   LeftHand: {fileID: 511527938}
   RightHand: {fileID: 1583471646}
+--- !u!114 &251619458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251619446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8e1990d6df4d7488e1edb96e45b329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Table: {fileID: 1795126478}
+  Plate: {fileID: 809110071}
+  BottomBread: {fileID: 716045215}
+  TopBread: {fileID: 453272380}
+  Tomato: {fileID: 1360880324}
+  Cheese: {fileID: 491323056}
+  Steak: {fileID: 389701360}
+  RightHand: {fileID: 1583471646}
+  LeftHand: {fileID: 511527938}
+  anim: {fileID: 1237603688}
 --- !u!1 &271418823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7495,7 +7518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4427191320606395980, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}
       propertyPath: m_Name
-      value: plate02 (2
+      value: plate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83cef8151cc2764e80d7ba6f97231fd, type: 3}

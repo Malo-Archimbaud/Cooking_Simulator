@@ -31,13 +31,7 @@ public class ReleasingFood : MonoBehaviour
                 Food.transform.transform.localPosition = new Vector3(0,0,0);
                 Food = null;
             }
-            else if (Hand.transform.childCount > 0) 
-                    {
-                        Food.transform.SetParent(null);
-                        Food.transform.transform.position = new Vector3(-14.24f, 1.428f, 25.208f);
-                        Food.transform.transform.localEulerAngles = new Vector3(0, 0, 0);
-                        Food = null;
-                    }
+            
         }
     }
 }
